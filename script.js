@@ -1,20 +1,23 @@
-const API_KEY = "Bearer pat73Zxmip0UaMrRV";
+const API_KEY =
+  "Bearer pat73ZxmipOUaMrRV.48038784e643a3d80d658252c502818d0599fef3cdec57278290ac20e6843304";
 const BASE_ID = "apptWTdlRculf67Cs";
-const TABLE_NAME = "NomeDaTabela"; // Ex: "Empresas" ou o nome da aba da base
+const TABLE_NAME = "Table 1"; // Ex: "Empresas" ou o nome da aba da base
 
 document.getElementById("empresaForm").addEventListener("submit", function (e) {
   e.preventDefault();
-
+  console.log("enviou");
   const data = {
     fields: {
       nome: document.getElementById("nome").value,
       faturamento: parseFloat(document.getElementById("faturamento").value),
+      segmento: document.getElementById("segmento").value,
       receita_recorrente: parseFloat(
         document.getElementById("recorrente").value
       ),
       margem_bruta: parseFloat(document.getElementById("margem").value),
-      cac: parseFloat(document.getElementById("cac").value),
-      ltv: parseFloat(document.getElementById("ltv").value),
+      churn: parseFloat(document.getElementById("churn").value),
+      cacLtv: parseFloat(document.getElementById("cacltv").value),
+      multiplicador: parseFloat(document.getElementById("multiplicador").value),
     },
   };
 
