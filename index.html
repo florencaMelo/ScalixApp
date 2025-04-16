@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro de Empresas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Cadastro de Empresas</h1>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+      </nav>
+    </header>
+
+    <main>
+      <form id="empresaForm">
+        <label>Nome da Empresa</label>
+        <input type="text" id="nome" required />
+
+        <label>Faturamento Mensal</label>
+        <input type="number" id="faturamento" required />
+
+        <label>Segmento do Mercado</label>
+        <input type="text" id="segmento" required />
+
+        <label>Receita Recorrente</label>
+        <input type="number" id="recorrente" />
+
+        <label>Margem Bruta (%)</label>
+        <input type="number" id="margem" step="0.01" />
+
+        <label>Churn (%)</label>
+        <input type="number" id="churn" step="0.01" />
+
+        <label>CAC/LTV</label>
+        <input type="text" id="cacltv" />
+
+        <label>Multiplicador</label>
+        <input type="number" id="multiplicador" step="0.01" />
+
+        <button type="submit">Cadastrar</button>
+      </form>
+
+      <div id="mensagem"></div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
